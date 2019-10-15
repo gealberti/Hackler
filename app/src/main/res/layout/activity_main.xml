@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/home_background">
+
+    <ImageView
+        android:id="@+id/girlHome"
+        android:layout_width="109dp"
+        android:layout_height="146dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.137"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.597"
+        app:srcCompat="@drawable/girl" />
+
+    <ImageButton
+        android:id="@+id/configButton"
+        android:layout_width="63dp"
+        android:layout_height="62dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:onClick="irConfig"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.057"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.987"
+        app:srcCompat="@drawable/settingsbuttom"
+        />
+
+    <ImageButton
+        android:id="@+id/cursosButton"
+        android:layout_width="61dp"
+        android:layout_height="72dp"
+        android:background="@null"
+        android:onClick="irCursos"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.346"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.987"
+        app:srcCompat="@drawable/cursosbutton" />
+
+    <ImageButton
+        android:id="@+id/lojaButton"
+        android:layout_width="70dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="16dp"
+        android:background="@null"
+        android:onClick="irLoja"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.612"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/loja_icon" />
+
+    d
+
+    <ImageButton
+        android:id="@+id/missoesButton"
+        android:layout_width="95dp"
+        android:layout_height="80dp"
+        android:background="@null"
+        android:onClick="irMissoes"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.941"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.986"
+        app:srcCompat="@drawable/missoesbutton" />
+</androidx.constraintlayout.widget.ConstraintLayout>

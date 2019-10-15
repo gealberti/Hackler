@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Hackler</string>
+    <string name="Splash">HACKLER</string>
+    <string name="Som">Som</string>
+    <string name="Musica">Música</string>
+    <string name="ConquistasConfig">Conquistas</string>
+    <string name="Missao1">1</string>
+    <string name="Missao2">2</string>
+    <string name="Missao3">3</string>
+    <string name="Missao4">4</string>
+</resources>

@@ -1,132 +1,1088 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ListaMissoesActivity">
 
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="70dp"
-        android:layout_height="82dp"
+
+
+    <FrameLayout
+        android:orientation="vertical"
         android:background="@null"
-        android:onClick="irMissao"
-        android:scaleType="fitCenter"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.048"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.249"
-        app:srcCompat="@drawable/nivel_button" />
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <ImageButton
-        android:id="@+id/imageButton3"
-        android:layout_width="70dp"
-        android:layout_height="82dp"
-        android:background="@null"
-        android:onClick="irMissao"
-        android:scaleType="fitCenter"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.343"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.249"
-        app:srcCompat="@drawable/nivel_button" />
+        <ImageView
+            android:id="@+id/VoltarHome"
+            android:layout_width="59dp"
+            android:layout_height="63dp"
+            android:layout_gravity="left"
+            android:background="@null"
+            android:onClick="voltarHome"
+            android:scaleType="fitCenter"
+            android:src="@drawable/voltar" />
 
-    <ImageButton
-        android:id="@+id/imageButton4"
-        android:layout_width="70dp"
-        android:layout_height="82dp"
-        android:background="@null"
-        android:onClick="irMissao"
-        android:scaleType="fitCenter"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.633"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.249"
-        app:srcCompat="@drawable/nivel_button" />
+        <RelativeLayout
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
 
-    <ImageButton
-        android:id="@+id/imageButton5"
-        android:layout_width="70dp"
-        android:layout_height="82dp"
-        android:background="@null"
-        android:onClick="irMissao"
-        android:scaleType="fitCenter"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.923"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.249"
-        app:srcCompat="@drawable/nivel_button" />
+        </RelativeLayout>
 
-    <ImageButton
-        android:id="@+id/imageButton6"
-        android:layout_width="82dp"
-        android:layout_height="82dp"
-        android:background="@null"
-        android:onClick="voltarHome"
-        android:scaleType="fitCenter"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/voltar" />
+        <GridLayout
+            android:id="@+id/mainGrid"
+            android:layout_width="match_parent"
+            android:layout_height="700dp"
+            android:layout_weight="8"
+            android:alignmentMode="alignMargins"
+            android:background="@null"
+            android:columnCount="4"
+            android:columnOrderPreserved="false"
+            android:padding="14dp"
+            android:rowCount="4"
+            android:layout_marginTop="55dp">
 
-    <TextView
-        android:id="@+id/numeroMissao"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/cairobold"
-        android:onClick="irMissao"
-        android:text="@string/Missao1"
-        android:textColor="@color/Background"
-        android:textSize="35sp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageButton"
-        app:layout_constraintEnd_toEndOf="@+id/imageButton"
-        app:layout_constraintStart_toStartOf="@+id/imageButton"
-        app:layout_constraintTop_toTopOf="@+id/imageButton" />
+            <!-- Row 1 -->
 
-    <TextView
-        android:id="@+id/numeroMissao3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/cairobold"
-        android:onClick="irMissao"
-        android:text="@string/Missao3"
-        android:textColor="@color/Background"
-        android:textSize="35sp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageButton4"
-        app:layout_constraintEnd_toEndOf="@+id/imageButton4"
-        app:layout_constraintHorizontal_bias="0.56"
-        app:layout_constraintStart_toStartOf="@+id/imageButton4"
-        app:layout_constraintTop_toTopOf="@+id/imageButton4"
-        app:layout_constraintVertical_bias="1.0"
-        tools:text="@string/Missao3" />
+            <!-- Column 1 -->
 
-    <TextView
-        android:id="@+id/numeroMissao2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/cairobold"
-        android:onClick="irMissao"
-        android:text="@string/Missao2"
-        android:textColor="@color/Background"
-        android:textSize="35sp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageButton3"
-        app:layout_constraintEnd_toEndOf="@+id/imageButton3"
-        app:layout_constraintHorizontal_bias="0.56"
-        app:layout_constraintStart_toStartOf="@+id/imageButton3"
-        app:layout_constraintTop_toTopOf="@+id/imageButton3"
-        app:layout_constraintVertical_bias="1.0"
-        tools:text="@string/Missao2" />
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:visibility="visible"
+                app:cardBackgroundColor="@color/Background"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="68dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="0dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/missão1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:scaleType="fitCenter"
+                        android:onClick="irMissao"
+                        app:srcCompat="@drawable/nivel_button" />
+
+                    <TextView
+                        android:id="@+id/m1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="15dp"
+                        android:text="1"
+                        android:onClick="irMissao"
+                        android:textAlignment="center"
+                        android:textColor="@color/Background"
+                        android:textSize="30dp" />
+
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="@color/Background"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="68dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="0dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/missão2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:scaleType="fitCenter"
+                        android:onClick="toastMissao"
+                        app:srcCompat="@drawable/nivel_button" />
+
+                    <TextView
+                        android:id="@+id/m2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="15dp"
+                        android:text="2"
+                        android:textAlignment="center"
+                        android:onClick="toastMissao"
+                        android:textColor="@color/Background"
+                        android:textSize="30dp" />
+
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="@color/Background"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="68dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="0dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/missão3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:scaleType="fitCenter"
+                        android:onClick="toastMissao"
+                        app:srcCompat="@drawable/nivel_button" />
+
+                    <TextView
+                        android:id="@+id/m3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="15dp"
+                        android:text="3"
+                        android:textAlignment="center"
+                        android:onClick="toastMissao"
+                        android:textColor="@color/Background"
+                        android:textSize="30dp" />
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Column 2 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="@color/Background"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="68dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="0dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/missão4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:scaleType="fitCenter"
+                        android:onClick="toastMissao"
+                        app:srcCompat="@drawable/nivel_button" />
+
+                    <TextView
+                        android:id="@+id/m4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="15dp"
+                        android:text="4"
+                        android:textAlignment="center"
+                        android:onClick="toastMissao"
+                        android:textColor="@color/Background"
+                        android:textSize="30dp" />
+
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- Row 2 -->
+
+            <!-- Column 1 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="@color/Background"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="68dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="0dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/missão5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:scaleType="fitCenter"
+                        android:onClick="toastMissao"
+                        app:srcCompat="@drawable/nivel_button" />
+
+                    <TextView
+                        android:id="@+id/m5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="15dp"
+                        android:text="5"
+                        android:onClick="toastMissao"
+                        android:textAlignment="center"
+                        android:textColor="@color/Background"
+                        android:textSize="30dp" />
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- Column 2 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="@color/Background"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="68dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="0dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/missão6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:onClick="toastMissao"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/nivel_button" />
+
+                    <TextView
+                        android:id="@+id/m6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="15dp"
+                        android:text="6"
+                        android:textAlignment="center"
+                        android:onClick="toastMissao"
+                        android:textColor="@color/Background"
+                        android:textSize="30dp" />
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- Row 2 -->
+
+            <!-- Column 1 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="@color/Background"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="68dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="0dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/missão7"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:onClick="toastMissao"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/nivel_button" />
+
+                    <TextView
+                        android:id="@+id/m7"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="15dp"
+                        android:text="7"
+                        android:textAlignment="center"
+                        android:onClick="toastMissao"
+                        android:textColor="@color/Background"
+                        android:textSize="30dp" />
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- Column 2 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="@color/Background"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="68dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="0dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/missão8"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:scaleType="fitCenter"
+                        android:onClick="toastMissao"
+                        app:srcCompat="@drawable/nivel_button" />
+
+                    <TextView
+                        android:id="@+id/m8"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="15dp"
+                        android:text="8"
+                        android:textAlignment="center"
+                        android:onClick="toastMissao"
+                        android:textColor="@color/Background"
+                        android:textSize="30dp" />
+
+
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="@color/Background"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="68dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="0dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/missao9"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:scaleType="fitCenter"
+                        android:onClick="toastMissao"
+                        app:srcCompat="@drawable/nivel_button" />
+
+                    <TextView
+                        android:id="@+id/m9"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="15dp"
+                        android:text="9"
+                        android:textAlignment="center"
+                        android:onClick="toastMissao"
+                        android:textColor="@color/Background"
+                        android:textSize="30dp" />
+
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="@color/Background"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="68dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="0dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/missao10"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:scaleType="fitCenter"
+                        android:onClick="toastMissao"
+                        app:srcCompat="@drawable/nivel_button" />
+
+                    <TextView
+                        android:id="@+id/m10"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:text="15"
+                        android:textAlignment="center"
+                        android:onClick="toastMissao"
+                        android:textColor="@color/Background"
+                        android:textSize="30dp" />
+
+
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="@color/Background"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="68dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="0dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/missao11"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:scaleType="fitCenter"
+                        android:onClick="toastMissao"
+                        app:srcCompat="@drawable/nivel_button" />
+
+                    <TextView
+                        android:id="@+id/m11"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="15dp"
+                        android:text="11"
+                        android:textAlignment="center"
+                        android:onClick="toastMissao"
+                        android:textColor="@color/Background"
+                        android:textSize="30dp" />
+
+
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="@color/Background"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="68dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="0dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/missao12"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:scaleType="fitCenter"
+                        android:onClick="toastMissao"
+                        app:srcCompat="@drawable/nivel_button" />
+
+                    <TextView
+                        android:id="@+id/m12"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="15dp"
+                        android:text="12"
+                        android:textAlignment="center"
+                        android:onClick="toastMissao"
+                        android:textColor="@color/Background"
+                        android:textSize="30dp" />
+
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="@color/Background"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="68dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="0dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/missao14"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:scaleType="fitCenter"
+                        android:onClick="toastMissao"
+                        app:srcCompat="@drawable/nivel_button" />
+
+                    <TextView
+                        android:id="@+id/m13"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="15dp"
+                        android:text="13"
+                        android:textAlignment="center"
+                        android:onClick="toastMissao"
+                        android:textColor="@color/Background"
+                        android:textSize="30dp" />
+
+
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="@color/Background"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="68dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="0dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/missao15"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:scaleType="fitCenter"
+                        android:onClick="toastMissao"
+                        app:srcCompat="@drawable/nivel_button" />
+
+                    <TextView
+                        android:id="@+id/m14"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="15dp"
+                        android:text="14"
+                        android:textAlignment="center"
+                        android:onClick="toastMissao"
+                        android:textColor="@color/Background"
+                        android:textSize="30dp" />
+
+
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="@color/Background"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="68dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="0dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/missao16"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:scaleType="fitCenter"
+                        android:onClick="toastMissao"
+                        app:srcCompat="@drawable/nivel_button" />
+
+                    <TextView
+                        android:id="@+id/m15"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="15dp"
+                        android:text="15"
+                        android:textAlignment="center"
+                        android:onClick="toastMissao"
+                        android:textColor="@color/Background"
+                        android:textSize="30dp" />
+
+
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="@color/Background"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="68dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="0dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/missao17"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:scaleType="fitCenter"
+                        android:onClick="toastMissao"
+                        app:srcCompat="@drawable/nivel_button" />
+
+                    <TextView
+                        android:id="@+id/m16"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="15dp"
+                        android:text="16"
+                        android:textAlignment="center"
+                        android:onClick="toastMissao"
+                        android:textColor="@color/Background"
+                        android:textSize="30dp" />
+
+
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="@color/Background"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="68dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="0dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/missao18"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:scaleType="fitCenter"
+                        android:onClick="toastMissao"
+                        app:srcCompat="@drawable/nivel_button" />
+
+                    <TextView
+                        android:id="@+id/m17"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="15dp"
+                        android:text="17"
+                        android:textAlignment="center"
+                        android:onClick="toastMissao"
+                        android:textColor="@color/Background"
+                        android:textSize="30dp" />
+
+
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="@color/Background"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="68dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="0dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/missao19"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:scaleType="fitCenter"
+                        android:onClick="toastMissao"
+                        app:srcCompat="@drawable/nivel_button" />
+
+                    <TextView
+                        android:id="@+id/m18"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="15dp"
+                        android:text="18"
+                        android:textAlignment="center"
+                        android:onClick="toastMissao"
+                        android:textColor="@color/Background"
+                        android:textSize="30dp" />
+
+
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="@color/Background"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="68dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="0dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/missao20"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:scaleType="fitCenter"
+                        android:onClick="toastMissao"
+                        app:srcCompat="@drawable/nivel_button" />
+
+                    <TextView
+                        android:id="@+id/m19"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="15dp"
+                        android:text="19"
+                        android:textAlignment="center"
+                        android:onClick="toastMissao"
+                        android:textColor="@color/Background"
+                        android:textSize="30dp" />
+
+
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="@color/Background"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="68dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="0dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/missao21"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:scaleType="fitCenter"
+                        android:onClick="toastMissao"
+                        app:srcCompat="@drawable/nivel_button" />
+
+                    <TextView
+                        android:id="@+id/m20"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="15dp"
+                        android:text="20"
+                        android:textAlignment="center"
+                        android:onClick="toastMissao"
+                        android:textColor="@color/Background"
+                        android:textSize="30dp" />
+
+
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="@color/Background"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="68dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="0dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/missao22"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:scaleType="fitCenter"
+                        android:onClick="toastMissao"
+                        app:srcCompat="@drawable/nivel_button" />
+
+                    <TextView
+                        android:id="@+id/m21"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="15dp"
+                        android:text="21"
+                        android:onClick="toastMissao"
+                        android:textAlignment="center"
+                        android:textColor="@color/Background"
+                        android:textSize="30dp" />
+
+
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="@color/Background"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="68dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="0dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/missao23"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:scaleType="fitCenter"
+                        android:onClick="toastMissao"
+                        app:srcCompat="@drawable/nivel_button" />
+
+                    <TextView
+                        android:id="@+id/m22"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="15dp"
+                        android:text="22"
+                        android:textAlignment="center"
+                        android:onClick="toastMissao"
+                        android:textColor="@color/Background"
+                        android:textSize="30dp" />
+
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="@color/Background"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="68dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="0dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/missao233"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:scaleType="fitCenter"
+                        android:onClick="toastMissao"
+                        app:srcCompat="@drawable/nivel_button" />
+
+                    <TextView
+                        android:id="@+id/m23"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="15dp"
+                        android:text="23"
+                        android:textAlignment="center"
+                        android:onClick="toastMissao"
+                        android:textColor="@color/Background"
+                        android:textSize="30dp" />
+
+
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="@color/Background"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="68dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="0dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/missao24"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:scaleType="fitCenter"
+                        android:onClick="toastMissao"
+                        app:srcCompat="@drawable/nivel_button" />
+
+                    <TextView
+                        android:id="@+id/m24"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="15dp"
+                        android:text="24"
+                        android:textAlignment="center"
+                        android:onClick="toastMissao"
+                        android:textColor="@color/Background"
+                        android:textSize="30dp" />
+
+
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </GridLayout>
+
+    </FrameLayout>
+
+</ScrollView>

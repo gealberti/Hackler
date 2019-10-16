@@ -1,9 +1,395 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".LojaActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@null"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/VoltarHome"
+            android:layout_width="59dp"
+            android:layout_height="63dp"
+            android:layout_gravity="left"
+            android:background="@null"
+            android:onClick="voltarHome"
+            android:scaleType="fitCenter"
+            android:src="@drawable/voltar" />
+
+        <TextView
+            android:id="@+id/LOJA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/cairobold"
+            android:text="LOJA"
+            android:textColorLink="@color/Red"
+            android:textColor="@android:color/white"
+            android:textSize="34sp" />
+
+        <RelativeLayout
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+        </RelativeLayout>
+
+        <GridLayout
+            android:id="@+id/mainGrid"
+            android:layout_width="match_parent"
+            android:layout_height="700dp"
+            android:layout_weight="8"
+            android:alignmentMode="alignMargins"
+            android:columnCount="2"
+            android:columnOrderPreserved="false"
+            android:padding="14dp"
+            android:rowCount="4"
+            android:background="@null">
+
+            <!-- Row 1 -->
+
+            <!-- Column 1 -->
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="@color/Background"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="145dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="0dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/Item1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/storeblock" />
+
+
+                    <ImageButton
+                        android:id="@+id/comprar"
+                        android:layout_width="78dp"
+                        android:layout_height="39dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="90dp"
+                        android:background="@null"
+                        android:onClick="adquirirItem"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/button_buy" />
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="@color/Background"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="145dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="0dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/Item2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/storeblock" />
+                    <ImageButton
+                        android:id="@+id/comprar1"
+                        android:layout_width="78dp"
+                        android:layout_height="39dp"
+                        android:background="@null"
+                        android:scaleType="fitCenter"
+                        android:layout_marginTop="90dp"
+                        android:onClick="adquirirItem"
+                        android:layout_marginLeft="50dp"
+                        app:srcCompat="@drawable/button_buy" />
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="@color/Background"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="145dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="0dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/Item3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/storeblock" />
+                    <ImageButton
+                        android:id="@+id/comprar2"
+                        android:layout_width="78dp"
+                        android:layout_height="39dp"
+                        android:background="@null"
+                        android:scaleType="fitCenter"
+                        android:layout_marginTop="90dp"
+                        android:onClick="adquirirItem"
+                        android:layout_marginLeft="50dp"
+                        app:srcCompat="@drawable/button_buy" />
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Column 2 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="@color/Background"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="145dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="0dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/Item4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/storeblock" />
+                    <ImageButton
+                        android:id="@+id/comprar4"
+                        android:layout_width="78dp"
+                        android:layout_height="39dp"
+                        android:background="@null"
+                        android:scaleType="fitCenter"
+                        android:layout_marginTop="90dp"
+                        android:onClick="adquirirItem"
+                        android:layout_marginLeft="50dp"
+                        app:srcCompat="@drawable/button_buy" />
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+            <!-- Row 2 -->
+
+            <!-- Column 1 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="@color/Background"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="145dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="0dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/Item5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/storeblock" />
+                    <ImageButton
+                        android:id="@+id/comprar5"
+                        android:layout_width="78dp"
+                        android:layout_height="39dp"
+                        android:background="@null"
+                        android:scaleType="fitCenter"
+                        android:onClick="adquirirItem"
+                        android:layout_marginTop="90dp"
+                        android:layout_marginLeft="50dp"
+                        app:srcCompat="@drawable/button_buy" />
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- Column 2 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="@color/Background"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="145dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="0dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/Item6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/storeblock" />
+                    <ImageButton
+                        android:id="@+id/comprar6"
+                        android:layout_width="78dp"
+                        android:layout_height="39dp"
+                        android:background="@null"
+                        android:onClick="adquirirItem"
+                        android:scaleType="fitCenter"
+                        android:layout_marginTop="90dp"
+                        android:layout_marginLeft="50dp"
+                        app:srcCompat="@drawable/button_buy" />
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- Row 2 -->
+
+            <!-- Column 1 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="@color/Background"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="145dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="0dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/Item7"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/storeblock" />
+                    <ImageButton
+                        android:id="@+id/comprar7"
+                        android:layout_width="78dp"
+                        android:layout_height="39dp"
+                        android:background="@null"
+                        android:scaleType="fitCenter"
+                        android:onClick="adquirirItem"
+                        android:layout_marginTop="90dp"
+                        android:layout_marginLeft="50dp"
+                        app:srcCompat="@drawable/button_buy" />
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- Column 2 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="@color/Background"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="145dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="0dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/Item8"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/storeblock" />
+                    <ImageButton
+                        android:id="@+id/comprar8"
+                        android:layout_width="78dp"
+                        android:layout_height="39dp"
+                        android:background="@null"
+                        android:scaleType="fitCenter"
+                        android:layout_marginTop="90dp"
+                        android:layout_marginLeft="50dp"
+                        app:srcCompat="@drawable/button_buy" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+
+        </GridLayout>
+
+    </LinearLayout>
+
+</ScrollView>

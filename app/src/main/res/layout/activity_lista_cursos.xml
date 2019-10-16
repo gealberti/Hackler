@@ -1,61 +1,252 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ListaCursosActivity">
 
-    <ImageButton
-        android:id="@+id/imageButton7"
-        android:layout_width="58dp"
-        android:layout_height="74dp"
+
+
+    <LinearLayout
+        android:orientation="vertical"
         android:background="@null"
-        android:onClick="voltarConfig"
-        android:scaleType="fitCenter"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/voltar" />
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/curso1"
-        android:layout_width="399dp"
-        android:layout_height="169dp"
-        android:layout_marginStart="4dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.25"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.165"
-        app:srcCompat="@drawable/listacursos" />
+        <ImageView
+            android:id="@+id/VoltarHome"
+            android:layout_width="59dp"
+            android:layout_height="63dp"
+            android:layout_gravity="left"
+            android:background="@null"
+            android:onClick="voltarHome"
+            android:scaleType="fitCenter"
+            android:src="@drawable/voltar" />
 
-    <ImageView
-        android:id="@+id/curso2"
-        android:layout_width="399dp"
-        android:layout_height="169dp"
-        android:layout_marginStart="4dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.25"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/curso1"
-        app:layout_constraintVertical_bias="0.023"
-        app:srcCompat="@drawable/listacursos" />
 
-    <ImageView
-        android:id="@+id/curso3"
-        android:layout_width="399dp"
-        android:layout_height="170dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/curso2"
-        app:layout_constraintVertical_bias="0.073"
-        app:srcCompat="@drawable/listacursos" />
+        <RelativeLayout
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        </RelativeLayout>
+
+        <GridLayout
+            android:id="@+id/mainGrid"
+            android:layout_width="match_parent"
+            android:layout_height="900dp"
+            android:layout_weight="8"
+            android:alignmentMode="alignMargins"
+            android:columnCount="1"
+            android:columnOrderPreserved="false"
+            android:padding="10dp"
+            android:rowCount="4"
+            android:background="@null">
+
+            <!-- Row 1 -->
+
+            <!-- Column 1 -->
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="@color/Background"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="339dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="0dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/Item1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/listacursos" />
+
+
+                    <ImageButton
+                        android:id="@+id/comprar"
+                        android:layout_width="78dp"
+                        android:layout_height="39dp"
+                        android:layout_marginLeft="270dp"
+                        android:layout_marginTop="190dp"
+                        android:background="@null"
+                        android:onClick="cursoIndisponivel"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/button_curso" />
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="@color/Background"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="339dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="0dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/Item2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/listacursos" />
+                    <ImageButton
+                        android:id="@+id/comprar1"
+                        android:layout_width="78dp"
+                        android:layout_height="39dp"
+                        android:background="@null"
+                        android:scaleType="fitCenter"
+                        android:layout_marginTop="190dp"
+                        android:onClick="cursoIndisponivel"
+                        android:layout_marginLeft="270dp"
+                        app:srcCompat="@drawable/button_curso" />
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="@color/Background"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="339dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="0dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/Item3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/listacursos" />
+                    <ImageButton
+                        android:id="@+id/comprar2"
+                        android:layout_width="78dp"
+                        android:layout_height="39dp"
+                        android:background="@null"
+                        android:scaleType="fitCenter"
+                        android:layout_marginTop="190dp"
+                        android:onClick="cursoIndisponivel"
+                        android:layout_marginLeft="270dp"
+                        app:srcCompat="@drawable/button_curso" />
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Column 2 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="@color/Background"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="339dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="0dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/Item4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/listacursos" />
+                    <ImageButton
+                        android:id="@+id/comprar4"
+                        android:layout_width="78dp"
+                        android:layout_height="39dp"
+                        android:background="@null"
+                        android:scaleType="fitCenter"
+                        android:layout_marginTop="190dp"
+                        android:onClick="cursoIndisponivel"
+                        android:layout_marginLeft="270dp"
+                        app:srcCompat="@drawable/button_curso" />
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="@color/Background"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="339dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="0dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/Item5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/listacursos" />
+                    <ImageButton
+                        android:id="@+id/comprar5"
+                        android:layout_width="78dp"
+                        android:layout_height="39dp"
+                        android:background="@null"
+                        android:scaleType="fitCenter"
+                        android:layout_marginTop="190dp"
+                        android:onClick="cursoIndisponivel"
+                        android:layout_marginLeft="270dp"
+                        app:srcCompat="@drawable/button_curso" />
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+
+    </LinearLayout>
+
+</ScrollView>

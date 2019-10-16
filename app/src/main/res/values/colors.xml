@@ -6,4 +6,6 @@
     <color name="Background">#303030</color>
     <color name="Splash">#2A2A2A</color>
     <color name="White">#FFFFFF</color>
+    <color name="Red">#DE2418</color>
+    <color name="CinzaClaro">#707070</color>
 </resources>

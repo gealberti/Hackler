@@ -16,11 +16,6 @@ public class ListaMissoesActivity extends AppCompatActivity {
         setContentView(R.layout.activity_lista_missoes);
         enabledFullScreenMode();
     }
-    public void irMissao (View view){
-        Intent missaoIntent = new Intent(ListaMissoesActivity.this, Missao1.class);
-        startActivity(missaoIntent);
-        finish();
-    }
     public void voltarHome (View view){
         Intent voltarIntent = new Intent(ListaMissoesActivity.this, MainActivity.class);
         startActivity(voltarIntent);

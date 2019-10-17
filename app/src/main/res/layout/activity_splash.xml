@@ -7,6 +7,19 @@
     tools:context=".SplashActivity"
     android:background="@color/Background">
 
+    <TextView
+        android:id="@+id/splash"
+        android:layout_width="265dp"
+        android:layout_height="98dp"
+        android:fontFamily="@font/cairobold"
+        android:text="@string/Splash"
+        android:textColor="@color/Splash"
+        android:textSize="65sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LogoSplash" />
+
     <ImageView
         android:id="@+id/LogoSplash"
         android:layout_width="251dp"
@@ -18,17 +31,4 @@
         app:layout_constraintVertical_bias="0.458"
         app:srcCompat="@drawable/logo" />
 
-    <TextView
-        android:id="@+id/Splash"
-        android:layout_width="265dp"
-        android:layout_height="98dp"
-        android:fontFamily="@font/cairobold"
-        android:text="@string/Splash"
-        android:textColor="@color/Splash"
-        android:textSize="65sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/LogoSplash"
-        app:layout_constraintVertical_bias="0.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>

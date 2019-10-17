@@ -16,14 +16,42 @@ public class LojaActivity extends AppCompatActivity {
         setContentView(R.layout.activity_loja);
         enabledFullScreenMode();
     }
-    public void adquirirItem (View view){
-        Toast.makeText(getApplicationContext() , "Você adquiriu um item!", Toast.LENGTH_SHORT).show();
-    }
+
     public void voltarHome (View view){
         Intent voltarIntent = new Intent(LojaActivity.this, MainActivity.class);
         startActivity(voltarIntent);
         finish();
     }
+
+    public void adquirirItem (View view){
+        Toast.makeText(getApplicationContext() , "Você adquiriu um item!", Toast.LENGTH_SHORT).show();
+    }
+
+    public void descricaoCapuccino (View view){
+        Toast.makeText(getApplicationContext() , "Descrição webservice", Toast.LENGTH_SHORT).show();
+    }
+    public void descricaoCafe (View view){
+        Toast.makeText(getApplicationContext() , "Descrição webservice", Toast.LENGTH_SHORT).show();
+    }
+    public void descricaoEnergetico (View view){
+        Toast.makeText(getApplicationContext() , "Descrição webservice", Toast.LENGTH_SHORT).show();
+    }
+    public void descricaoAntivirus (View view){
+        Toast.makeText(getApplicationContext() , "Descrição webservice", Toast.LENGTH_SHORT).show();
+    }
+    public void descricaoBloqueador (View view){
+        Toast.makeText(getApplicationContext() , "Descrição webservice", Toast.LENGTH_SHORT).show();
+    }
+    public void descricaoLupa (View view){
+        Toast.makeText(getApplicationContext() , "Descrição webservice", Toast.LENGTH_SHORT).show();
+    }
+    public void descricaoOculos (View view){
+        Toast.makeText(getApplicationContext() , "Descrição webservice", Toast.LENGTH_SHORT).show();
+    }
+    public void descricaoXP (View view){
+        Toast.makeText(getApplicationContext() , "Descrição webservice", Toast.LENGTH_SHORT).show();
+    }
+
 
     private void enabledFullScreenMode() {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,

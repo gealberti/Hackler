@@ -31,9 +31,17 @@
             android:layout_gravity="center_horizontal"
             android:fontFamily="@font/cairobold"
             android:text="LOJA"
-            android:textColorLink="@color/Red"
-            android:textColor="@android:color/white"
+            android:textColor="@color/Red"
             android:textSize="34sp" />
+        <TextView
+            android:id="@+id/Descricao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/cairo"
+            android:text="Clique nos blocos para saber mais de cada ítem!"
+            android:textColor="@color/CinzaClaro"
+            android:textSize="15sp" />
 
         <RelativeLayout
             android:layout_weight="2"
@@ -68,7 +76,8 @@
                 android:layout_marginBottom="16dp"
                 app:cardBackgroundColor="@color/Background"
                 app:cardCornerRadius="8dp"
-                app:cardElevation="8dp">
+                app:cardElevation="8dp"
+                android:onClick="descricaoCapuccino">
 
                 <FrameLayout
                     android:layout_width="wrap_content"
@@ -83,18 +92,37 @@
                         android:layout_height="match_parent"
                         android:background="@null"
                         android:scaleType="fitCenter"
-                        app:srcCompat="@drawable/storeblock" />
+                        app:srcCompat="@drawable/storeblock" ></ImageView>
+
+                    <ImageView
+                        android:id="@+id/icon2"
+                        android:layout_width="match_parent"
+                        android:layout_height="149dp"
+                        android:background="@null"
+                        android:padding="30dp"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/capuccino"></ImageView>
+
+                    <TextView
+                        android:id="@+id/Capuccino"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@font/cairo"
+                        android:text="Capuccino"
+                        android:textColor="@color/Background"
+                        android:textSize="20dp" />
 
 
                     <ImageButton
                         android:id="@+id/comprar"
                         android:layout_width="78dp"
                         android:layout_height="39dp"
-                        android:layout_marginLeft="50dp"
-                        android:layout_marginTop="90dp"
                         android:background="@null"
-                        android:onClick="adquirirItem"
                         android:scaleType="fitCenter"
+                        android:layout_marginTop="90dp"
+                        android:onClick="adquirirItem"
+                        android:layout_marginLeft="50dp"
                         app:srcCompat="@drawable/button_buy" />
                 </FrameLayout>
             </androidx.cardview.widget.CardView>
@@ -109,7 +137,8 @@
                 android:layout_marginBottom="16dp"
                 app:cardBackgroundColor="@color/Background"
                 app:cardCornerRadius="8dp"
-                app:cardElevation="8dp">
+                app:cardElevation="8dp"
+                android:onClick="descricaoCafe">
 
                 <FrameLayout
                     android:layout_width="wrap_content"
@@ -125,6 +154,25 @@
                         android:background="@null"
                         android:scaleType="fitCenter"
                         app:srcCompat="@drawable/storeblock" />
+
+                    <ImageView
+                        android:id="@+id/icon1"
+                        android:layout_width="match_parent"
+                        android:layout_height="149dp"
+                        android:background="@null"
+                        android:padding="30dp"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/coffee"></ImageView>
+                    <TextView
+                        android:id="@+id/Café"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@font/cairo"
+                        android:text="Café"
+                        android:textColor="@color/Background"
+                        android:textSize="20dp" />
+
                     <ImageButton
                         android:id="@+id/comprar1"
                         android:layout_width="78dp"
@@ -148,7 +196,8 @@
                 android:layout_marginBottom="16dp"
                 app:cardBackgroundColor="@color/Background"
                 app:cardCornerRadius="8dp"
-                app:cardElevation="8dp">
+                app:cardElevation="8dp"
+                android:onClick="descricaoEnergetico">
 
                 <FrameLayout
                     android:layout_width="wrap_content"
@@ -164,6 +213,26 @@
                         android:background="@null"
                         android:scaleType="fitCenter"
                         app:srcCompat="@drawable/storeblock" />
+
+                    <ImageView
+                        android:id="@+id/icon3"
+                        android:layout_width="match_parent"
+                        android:layout_height="149dp"
+                        android:background="@null"
+                        android:padding="30dp"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/can"></ImageView>
+
+                    <TextView
+                        android:id="@+id/Energético"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@font/cairo"
+                        android:text="Energético"
+                        android:textColor="@color/Background"
+                        android:textSize="20dp" />
+
                     <ImageButton
                         android:id="@+id/comprar2"
                         android:layout_width="78dp"
@@ -188,7 +257,8 @@
                 android:layout_marginBottom="16dp"
                 app:cardBackgroundColor="@color/Background"
                 app:cardCornerRadius="8dp"
-                app:cardElevation="8dp">
+                app:cardElevation="8dp"
+                android:onClick="descricaoAntivirus">
 
                 <FrameLayout
                     android:layout_width="wrap_content"
@@ -204,6 +274,26 @@
                         android:background="@null"
                         android:scaleType="fitCenter"
                         app:srcCompat="@drawable/storeblock" />
+
+                    <ImageView
+                        android:id="@+id/icon4"
+                        android:layout_width="match_parent"
+                        android:layout_height="149dp"
+                        android:background="@null"
+                        android:padding="30dp"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/shield"></ImageView>
+
+                    <TextView
+                        android:id="@+id/Antivirus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@font/cairo"
+                        android:text="Antivírus"
+                        android:textColor="@color/Background"
+                        android:textSize="20dp" />
+
                     <ImageButton
                         android:id="@+id/comprar4"
                         android:layout_width="78dp"
@@ -232,7 +322,8 @@
                 android:layout_marginBottom="16dp"
                 app:cardBackgroundColor="@color/Background"
                 app:cardCornerRadius="8dp"
-                app:cardElevation="8dp">
+                app:cardElevation="8dp"
+                android:onClick="descricaoBloqueador">
 
                 <FrameLayout
                     android:layout_width="wrap_content"
@@ -248,6 +339,28 @@
                         android:background="@null"
                         android:scaleType="fitCenter"
                         app:srcCompat="@drawable/storeblock" />
+
+                    <ImageView
+                        android:id="@+id/icon5"
+                        android:layout_width="match_parent"
+                        android:layout_height="149dp"
+                        android:background="@null"
+                        android:padding="30dp"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/cancel"></ImageView>
+
+                    <TextView
+                        android:id="@+id/Bloqueador"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@font/cairo"
+                        android:text="Bloqueador de Firewall"
+                        android:textAlignment="center"
+                        android:textColor="@color/Background"
+                        android:textSize="13dp" />
+
+
                     <ImageButton
                         android:id="@+id/comprar5"
                         android:layout_width="78dp"
@@ -273,7 +386,8 @@
                 android:layout_marginBottom="16dp"
                 app:cardBackgroundColor="@color/Background"
                 app:cardCornerRadius="8dp"
-                app:cardElevation="8dp">
+                app:cardElevation="8dp"
+                android:onClick="descricaoLupa">
 
                 <FrameLayout
                     android:layout_width="wrap_content"
@@ -289,6 +403,27 @@
                         android:background="@null"
                         android:scaleType="fitCenter"
                         app:srcCompat="@drawable/storeblock" />
+
+                    <ImageView
+                        android:id="@+id/icon6"
+                        android:layout_width="match_parent"
+                        android:layout_height="149dp"
+                        android:background="@null"
+                        android:padding="30dp"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/research"></ImageView>
+
+                    <TextView
+                        android:id="@+id/Lupa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@font/cairo"
+                        android:text="Lupa"
+                        android:textColor="@color/Background"
+                        android:textSize="20dp" />
+
+
                     <ImageButton
                         android:id="@+id/comprar6"
                         android:layout_width="78dp"
@@ -316,7 +451,8 @@
                 android:layout_marginBottom="16dp"
                 app:cardBackgroundColor="@color/Background"
                 app:cardCornerRadius="8dp"
-                app:cardElevation="8dp">
+                app:cardElevation="8dp"
+                android:onClick="descricaoOculos">
 
                 <FrameLayout
                     android:layout_width="wrap_content"
@@ -332,6 +468,27 @@
                         android:background="@null"
                         android:scaleType="fitCenter"
                         app:srcCompat="@drawable/storeblock" />
+
+                    <ImageView
+                        android:id="@+id/icon7"
+                        android:layout_width="match_parent"
+                        android:layout_height="149dp"
+                        android:background="@null"
+                        android:padding="30dp"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/eye_glasses"></ImageView>
+
+                    <TextView
+                        android:id="@+id/Óculos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@font/cairo"
+                        android:text="Óculos"
+                        android:textColor="@color/Background"
+                        android:textSize="20dp" />
+
+
                     <ImageButton
                         android:id="@+id/comprar7"
                         android:layout_width="78dp"
@@ -357,9 +514,10 @@
                 android:layout_marginBottom="16dp"
                 app:cardBackgroundColor="@color/Background"
                 app:cardCornerRadius="8dp"
-                app:cardElevation="8dp">
+                app:cardElevation="8dp"
+                android:onClick="descricaoXP">
 
-                <LinearLayout
+                <FrameLayout
                     android:layout_width="wrap_content"
                     android:layout_height="145dp"
                     android:layout_gravity="center_horizontal|center_vertical"
@@ -373,6 +531,26 @@
                         android:background="@null"
                         android:scaleType="fitCenter"
                         app:srcCompat="@drawable/storeblock" />
+
+                    <ImageView
+                        android:id="@+id/icon8"
+                        android:layout_width="match_parent"
+                        android:layout_height="149dp"
+                        android:background="@null"
+                        android:padding="30dp"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/hospital"></ImageView>
+
+                    <TextView
+                        android:id="@+id/XP"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@font/cairo"
+                        android:text="+XP"
+                        android:textColor="@color/Background"
+                        android:textSize="20dp" />
+
                     <ImageButton
                         android:id="@+id/comprar8"
                         android:layout_width="78dp"
@@ -382,7 +560,7 @@
                         android:layout_marginTop="90dp"
                         android:layout_marginLeft="50dp"
                         app:srcCompat="@drawable/button_buy" />
-                </LinearLayout>
+                </FrameLayout>
             </androidx.cardview.widget.CardView>
 
 

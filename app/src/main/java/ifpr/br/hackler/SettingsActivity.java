@@ -33,5 +33,15 @@ public class SettingsActivity extends AppCompatActivity {
         int uiOptions = View.SYSTEM_UI_FLAG_FULLSCREEN;
         decorView.setSystemUiVisibility(uiOptions);
     }
+    public void cadastrar (View view){
+        Intent cadastroIntent = new Intent(SettingsActivity.this, Cadastro.class);
+        startActivity(cadastroIntent);
+        finish();
+    }
 
+    public void irLogin (View view){
+        Intent logIntent = new Intent(SettingsActivity.this, Login.class);
+        startActivity(logIntent);
+        finish();
+    }
 }

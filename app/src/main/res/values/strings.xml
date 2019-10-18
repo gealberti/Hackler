@@ -8,4 +8,7 @@
     <string name="Missao2">2</string>
     <string name="Missao3">3</string>
     <string name="Missao4">4</string>
+    <string name="Cadastrar">Ainda não possui cadastro?</string>
+    <string name="logintexto">Ou faça</string>
+    <string name="loginlink">Login</string>
 </resources>

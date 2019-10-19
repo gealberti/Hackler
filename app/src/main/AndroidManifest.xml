@@ -9,11 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Login"
+        <activity android:name=".ObjetivoMissaoActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar"></activity>
-        <activity android:name=".Cadastro"
+        <activity
+            android:name=".Login"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".Cadastro"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".Missao1Activity"
             android:theme="@style/Theme.AppCompat.NoActionBar"/>
-        <activity android:name=".Missao1Activity" />
         <activity
             android:name=".Conquistas"
             android:theme="@style/Theme.AppCompat.NoActionBar" />

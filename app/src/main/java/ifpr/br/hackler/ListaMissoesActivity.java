@@ -25,6 +25,14 @@ public class ListaMissoesActivity extends AppCompatActivity {
         Toast.makeText(getApplicationContext() , "Essa missão ainda não está disponível!", Toast.LENGTH_SHORT).show();
     }
 
+    public void irMissao (View view){
+        Intent irintent = new Intent(ListaMissoesActivity.this, Missao1Activity.class);
+        startActivity(irintent);
+        finish();
+    }
+
+
+
     private void enabledFullScreenMode() {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);

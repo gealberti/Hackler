@@ -11,4 +11,9 @@
     <string name="Cadastrar">Ainda não possui cadastro?</string>
     <string name="logintexto">Ou faça</string>
     <string name="loginlink">Login</string>
+    <string name="localização">Localização</string>
+    <string name="senha">Senhas</string>
+    <string name="pastasdisp">Pastas</string>
+    <string name="adm">Administrador</string>
+
 </resources>

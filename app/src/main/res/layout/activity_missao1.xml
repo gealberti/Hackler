@@ -1,9 +1,269 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Missao1Activity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@null"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iconBarraLateral"
+                android:layout_width="67dp"
+                android:layout_height="76dp"
+                android:layout_gravity="left"
+                android:background="@null"
+                android:onClick="voltarHome"
+                android:padding="12dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/iconbarralateral" />
+
+            <ImageView
+                android:id="@+id/pistaVazia"
+                android:layout_width="82dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:padding="12dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/bolinhamissao" />
+
+            <ImageView
+                android:id="@+id/pistaVazia1"
+                android:layout_width="82dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:padding="12dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/bolinhamissao" />
+
+            <ImageView
+                android:id="@+id/pistaVazia2"
+                android:layout_width="82dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:padding="12dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/bolinhamissao" />
+
+            <ImageView
+                android:id="@+id/tempo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:padding="12dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/timespace" />
+    </LinearLayout>
+
+
+
+
+        <RelativeLayout
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+        </RelativeLayout>
+
+        <GridLayout
+            android:id="@+id/mainGrid"
+            android:layout_width="match_parent"
+            android:layout_height="800dp"
+            android:layout_weight="8"
+            android:alignmentMode="alignMargins"
+            android:columnCount="1"
+            android:columnOrderPreserved="false"
+            android:padding="10dp"
+            android:rowCount="4"
+            android:background="@null">
+
+            <!-- Row 1 -->
+
+            <!-- Column 1 -->
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="0dp"
+                app:cardBackgroundColor="@color/Background"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="0dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/bloco1"
+                        android:layout_width="360dp"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/blocos_missao" />
+                    <TextView
+                        android:id="@+id/m1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+
+                        android:fontFamily="@font/cairobold"
+                        android:text="@string/localização"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/Background"
+                        android:textSize="30dp" />
+
+
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="0dp"
+                app:cardBackgroundColor="@color/Background"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="0dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/bloco2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/blocos_missao" />
+                    <TextView
+                        android:id="@+id/m2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:fontFamily="@font/cairobold"
+                        android:text="@string/senha"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/Background"
+                        android:textSize="30dp" />
+
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="0dp"
+                app:cardBackgroundColor="@color/Background"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="0dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/missao3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/blocos_missao" />
+
+                    <TextView
+                        android:id="@+id/m3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:fontFamily="@font/cairobold"
+                        android:text="@string/pastasdisp"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/Background"
+                        android:textSize="30dp" />
+
+
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Column 2 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="0dp"
+                app:cardBackgroundColor="@color/Background"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="0dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/missao4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/blocos_missao" />
+
+                    <TextView
+                        android:id="@+id/m4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:fontFamily="@font/cairobold"
+                        android:text="@string/adm"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/Background"
+                        android:textSize="30dp" />
+                </FrameLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -6,17 +6,30 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.EditText;
 import android.widget.Toast;
 
+import java.io.IOException;
+
+import ifpr.br.hackler.db.DBHelper;
+
 public class Cadastro extends AppCompatActivity {
+
+    EditText editTextNome;
+    EditText editTextEmail;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cadastro);
         enabledFullScreenMode();
+        editTextNome = findViewById(R.id.Nome);
+        editTextEmail = findViewById(R.id.Email);
     }
-    public void cadastro (View view){
+    public void cadastro (View view) throws IOException {
+        String nome = editTextNome.getText().toString();
+        String email = editTextEmail.getText().toString();
+        DBHelper.insertIntoUsuario(email, nome);
         Intent cadastroIntent = new Intent(Cadastro.this, SettingsActivity.class);
         startActivity(cadastroIntent);
         finish();

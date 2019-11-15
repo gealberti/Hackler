@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.Toast;
 
 public class Missao1Activity extends AppCompatActivity {
 
@@ -16,10 +17,8 @@ public class Missao1Activity extends AppCompatActivity {
         setContentView(R.layout.activity_missao1);
         enabledFullScreenMode();
     }
-    public void voltarHome (View view){
-        Intent voltarIntent = new Intent(Missao1Activity.this, MainActivity.class);
-        startActivity(voltarIntent);
-        finish();
+    public void barraLateral (View view){
+        Toast.makeText(getApplicationContext() , "Menu!", Toast.LENGTH_SHORT).show();
     }
 
     private void enabledFullScreenMode() {

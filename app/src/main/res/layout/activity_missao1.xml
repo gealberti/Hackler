@@ -24,7 +24,7 @@
                 android:layout_height="76dp"
                 android:layout_gravity="left"
                 android:background="@null"
-                android:onClick="voltarHome"
+                android:onClick="barraLateral"
                 android:padding="12dp"
                 android:scaleType="fitCenter"
                 android:src="@drawable/iconbarralateral" />

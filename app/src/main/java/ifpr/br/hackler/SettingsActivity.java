@@ -44,4 +44,10 @@ public class SettingsActivity extends AppCompatActivity {
         startActivity(logIntent);
         finish();
     }
+
+    public void irDelete (View view){
+        Intent delIntent = new Intent(SettingsActivity.this, DeleteActivity.class);
+        startActivity(delIntent);
+        finish();
+    }
 }

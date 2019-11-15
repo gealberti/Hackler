@@ -62,11 +62,11 @@ public class Login extends AppCompatActivity {
         }
     }
 
-        public void voltarConfig(View view){
-            Intent voltarIntent = new Intent(Login.this, SettingsActivity.class);
-            startActivity(voltarIntent);
-            finish();
-        }
+    public void voltarConfig(View view){
+        Intent voltarIntent = new Intent(Login.this, SettingsActivity.class);
+        startActivity(voltarIntent);
+        finish();
+    }
 
 
     }

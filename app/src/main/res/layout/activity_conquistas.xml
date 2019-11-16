@@ -57,6 +57,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginBottom="16dp"
                 app:cardBackgroundColor="@color/CinzaClaro"
+                android:onClick="descricaoConquistas"
                 app:cardCornerRadius="8dp"
                 app:cardElevation="8dp">
 
@@ -86,6 +87,14 @@
                         android:onClick="moedasConquista"
                         android:layout_marginLeft="295dp"
                         android:layout_marginTop="7dp"/>
+                    <TextView
+                        android:id="@+id/conquista1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cairobold"
+                        android:text="Conquista 1"
+                        android:textColor="@color/Background"
+                        android:textSize="20dp" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -141,6 +150,15 @@
                         android:onClick="moedasConquista"
                         android:layout_marginLeft="295dp"
                         android:layout_marginTop="7dp"/>
+
+                    <TextView
+                        android:id="@+id/conquista2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cairobold"
+                        android:text="Conquista 2"
+                        android:textColor="@color/Background"
+                        android:textSize="20dp" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -195,6 +213,14 @@
                         android:onClick="moedasConquista"
                         android:layout_marginLeft="295dp"
                         android:layout_marginTop="7dp"/>
+                    <TextView
+                        android:id="@+id/conquista3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cairobold"
+                        android:text="Conquista 3"
+                        android:textColor="@color/Background"
+                        android:textSize="20dp" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -251,6 +277,14 @@
                         android:layout_marginLeft="295dp"
                         android:layout_marginTop="7dp"/>
                     <TextView
+                        android:id="@+id/conquista4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cairobold"
+                        android:text="Conquista 4"
+                        android:textColor="@color/Background"
+                        android:textSize="20dp" />
+                    <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="+50"
@@ -303,6 +337,14 @@
                         android:onClick="moedasConquista"
                         android:layout_marginLeft="295dp"
                         android:layout_marginTop="7dp"/>
+                    <TextView
+                        android:id="@+id/conquista5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cairobold"
+                        android:text="Conquista 5"
+                        android:textColor="@color/Background"
+                        android:textSize="20dp" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -359,6 +401,14 @@
                         android:layout_marginLeft="295dp"
                         android:layout_marginTop="7dp"/>
                     <TextView
+                        android:id="@+id/conquista6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cairobold"
+                        android:text="Conquista 6"
+                        android:textColor="@color/Background"
+                        android:textSize="20dp" />
+                    <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="+50"
@@ -412,6 +462,14 @@
                         android:onClick="moedasConquista"
                         android:layout_marginLeft="295dp"
                         android:layout_marginTop="7dp"/>
+                    <TextView
+                        android:id="@+id/conquista7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cairobold"
+                        android:text="Conquista 7"
+                        android:textColor="@color/Background"
+                        android:textSize="20dp" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -467,6 +525,14 @@
                         android:layout_marginLeft="295dp"
                         android:layout_marginTop="7dp"/>
                     <TextView
+                        android:id="@+id/conquista8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cairobold"
+                        android:text="Conquista 8"
+                        android:textColor="@color/Background"
+                        android:textSize="20dp" />
+                    <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="+50"
@@ -520,6 +586,14 @@
                         android:onClick="moedasConquista"
                         android:layout_marginLeft="295dp"
                         android:layout_marginTop="7dp"/>
+                    <TextView
+                        android:id="@+id/conquista9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cairobold"
+                        android:text="Conquista 9"
+                        android:textColor="@color/Background"
+                        android:textSize="20dp" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -576,6 +650,14 @@
                         android:layout_marginLeft="295dp"
                         android:onClick="moedasConquista"
                         android:layout_marginTop="7dp"/>
+                    <TextView
+                        android:id="@+id/conquista10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cairobold"
+                        android:text="Conquista 10"
+                        android:textColor="@color/Background"
+                        android:textSize="20dp" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"

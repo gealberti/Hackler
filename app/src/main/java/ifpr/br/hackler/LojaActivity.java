@@ -38,7 +38,7 @@ public class LojaActivity extends AppCompatActivity {
     }
 
     public void descricaoCapuccino (View view) throws IOException, JSONException {
-        JSONArray todasDescricoes = DBHelper.readDescricao();
+        JSONArray todasDescricoes = DBHelper.readDescricaoLoja();
         int ID = 0;
         JSONObject descricao = todasDescricoes.getJSONObject(ID);
         String novadescricao = descricao.toString();
@@ -49,7 +49,7 @@ public class LojaActivity extends AppCompatActivity {
         builder.create().show();
     }
     public void descricaoCafe (View view) throws IOException, JSONException {
-        JSONArray todasDescricoes = DBHelper.readDescricao();
+        JSONArray todasDescricoes = DBHelper.readDescricaoLoja();
         int ID = 1;
         JSONObject descricao = todasDescricoes.getJSONObject(ID);
         String novadescricao = descricao.toString();
@@ -60,7 +60,7 @@ public class LojaActivity extends AppCompatActivity {
         builder.create().show();
     }
     public void descricaoEnergetico (View view) throws IOException, JSONException {
-        JSONArray todasDescricoes = DBHelper.readDescricao();
+        JSONArray todasDescricoes = DBHelper.readDescricaoLoja();
         int ID = 2;
         JSONObject descricao = todasDescricoes.getJSONObject(ID);
         String novadescricao = descricao.toString();
@@ -71,7 +71,7 @@ public class LojaActivity extends AppCompatActivity {
         builder.create().show();
     }
     public void descricaoAntivirus (View view) throws IOException, JSONException {
-        JSONArray todasDescricoes = DBHelper.readDescricao();
+        JSONArray todasDescricoes = DBHelper.readDescricaoLoja();
         int ID = 3;
         JSONObject descricao = todasDescricoes.getJSONObject(ID);
         String novadescricao = descricao.toString();
@@ -82,7 +82,7 @@ public class LojaActivity extends AppCompatActivity {
         builder.create().show();
     }
     public void descricaoBloqueador (View view) throws IOException, JSONException {
-        JSONArray todasDescricoes = DBHelper.readDescricao();
+        JSONArray todasDescricoes = DBHelper.readDescricaoLoja();
         int ID = 4;
         JSONObject descricao = todasDescricoes.getJSONObject(ID);
         String novadescricao = descricao.toString();
@@ -93,7 +93,7 @@ public class LojaActivity extends AppCompatActivity {
         builder.create().show();
     }
     public void descricaoLupa (View view) throws IOException, JSONException {
-        JSONArray todasDescricoes = DBHelper.readDescricao();
+        JSONArray todasDescricoes = DBHelper.readDescricaoLoja();
         int ID = 5;
         JSONObject descricao = todasDescricoes.getJSONObject(ID);
         String novadescricao = descricao.toString();
@@ -104,7 +104,7 @@ public class LojaActivity extends AppCompatActivity {
         builder.create().show();
     }
     public void descricaoOculos (View view) throws IOException, JSONException {
-        JSONArray todasDescricoes = DBHelper.readDescricao();
+        JSONArray todasDescricoes = DBHelper.readDescricaoLoja();
         int ID = 6;
         JSONObject descricao = todasDescricoes.getJSONObject(ID);
         String novadescricao = descricao.toString();
@@ -115,7 +115,7 @@ public class LojaActivity extends AppCompatActivity {
         builder.create().show();
     }
     public void descricaoXP (View view) throws IOException, JSONException {
-        JSONArray todasDescricoes = DBHelper.readDescricao();
+        JSONArray todasDescricoes = DBHelper.readDescricaoLoja();
         int ID = 7;
         JSONObject descricao = todasDescricoes.getJSONObject(ID);
         String novadescricao = descricao.toString();

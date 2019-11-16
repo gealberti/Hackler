@@ -58,7 +58,7 @@ public class DBHelper {
         return jsonArray;
     }
 
-    public static JSONArray readDescricao() throws IOException, JSONException {
+    public static JSONArray readDescricaoLoja() throws IOException, JSONException {
         checkThreadPolicy();
         URL url = new URL(WEB_SERVICE_URL + "ws_read/ws_read_item.php");
         HttpURLConnection conexao = (HttpURLConnection) url.openConnection();
@@ -72,5 +72,23 @@ public class DBHelper {
         JSONArray jsonArray =  new JSONArray(sb.toString().trim());
         return jsonArray;
     }
+
+    public static JSONArray descricaoConquista() throws IOException, JSONException {
+        checkThreadPolicy();
+        URL url = new URL(WEB_SERVICE_URL + "ws_read/ws_read_conquistas.php");
+        HttpURLConnection conexao = (HttpURLConnection) url.openConnection();
+        BufferedReader br = new BufferedReader(new InputStreamReader(conexao.getInputStream()));
+        StringBuilder sb = new StringBuilder();
+        String resposta;
+        while((resposta = br.readLine())!=null){
+            sb.append(resposta);
+
+        }
+        JSONArray jsonArray =  new JSONArray(sb.toString().trim());
+        return jsonArray;
+    }
+
+
+
 
 }

@@ -1,5 +1,6 @@
 package ifpr.br.hackler;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -8,7 +9,14 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.Toast;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.IOException;
 import java.util.Set;
+
+import ifpr.br.hackler.db.DBHelper;
 
 public class Conquistas extends AppCompatActivity {
 
@@ -35,6 +43,19 @@ public class Conquistas extends AppCompatActivity {
         int uiOptions = View.SYSTEM_UI_FLAG_FULLSCREEN;
         decorView.setSystemUiVisibility(uiOptions);
     }
+
+    public void descricaoConquistas(View v) throws IOException, JSONException {
+        JSONArray todasDescricoes = DBHelper.descricaoConquista();
+        int ID = 0;
+        JSONObject descricao = todasDescricoes.getJSONObject(ID);
+        String novadescricao = descricao.toString();
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("Conquista");
+        builder.setMessage(novadescricao);
+        builder.setPositiveButton("Ok", null);
+        builder.create().show();
+    }
+
 
 
 }

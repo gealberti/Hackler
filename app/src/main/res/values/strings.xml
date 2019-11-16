@@ -15,5 +15,17 @@
     <string name="senha">Senhas</string>
     <string name="pastasdisp">Pastas</string>
     <string name="adm">Administrador</string>
+    <string-array name="conquistas">
+        <item>Iniciante</item>
+        <item>Aprendendo</item>
+        <item>Rápido</item>
+        <item>Muito rápido</item>
+        <item>The Flash</item>
+        <item>Formando</item>
+        <item>Profissional</item>
+        <item>Primeira derrota</item>
+        <item>Gastando</item>
+        <item>Milionário</item>
+    </string-array>
 
 </resources>

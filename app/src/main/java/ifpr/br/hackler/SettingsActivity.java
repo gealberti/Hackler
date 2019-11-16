@@ -3,9 +3,11 @@ package ifpr.br.hackler;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.Switch;
 
 public class SettingsActivity extends AppCompatActivity {
 
@@ -18,12 +20,11 @@ public class SettingsActivity extends AppCompatActivity {
     public void irConquistas (View view){
         Intent conquestIntent = new Intent(SettingsActivity.this, Conquistas.class);
         startActivity(conquestIntent);
-        finish();
+
     }
     public void voltarConfig (View view){
         Intent voltarIntent = new Intent(SettingsActivity.this, MainActivity.class);
         startActivity(voltarIntent);
-        finish();
     }
     private void enabledFullScreenMode() {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
@@ -36,18 +37,29 @@ public class SettingsActivity extends AppCompatActivity {
     public void cadastrar (View view){
         Intent cadastroIntent = new Intent(SettingsActivity.this, Cadastro.class);
         startActivity(cadastroIntent);
-        finish();
+
     }
 
     public void irLogin (View view){
         Intent logIntent = new Intent(SettingsActivity.this, Login.class);
         startActivity(logIntent);
-        finish();
+
     }
 
     public void irDelete (View view){
         Intent delIntent = new Intent(SettingsActivity.this, DeleteActivity.class);
         startActivity(delIntent);
         finish();
+    }
+
+    MediaPlayer mp;
+
+    public void tocarMusica(View view){
+        Switch musicaswitch = (Switch) view;
+        boolean isOn = musicaswitch.isChecked();
+        if(isOn){
+            mp = MediaPlayer.create(SettingsActivity.this, R.raw.megadrive);
+            mp.start();
+        }else{mp.stop();}
     }
 }

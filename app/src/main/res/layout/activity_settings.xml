@@ -154,4 +154,28 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textologin" />
 
+    <Switch
+        android:id="@+id/som"
+        android:layout_width="63dp"
+        android:layout_height="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.715"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.274" />
+
+    <Switch
+        android:id="@+id/musicaswitch"
+        android:layout_width="62dp"
+        android:layout_height="34dp"
+        android:onClick="tocarMusica"
+        android:outlineAmbientShadowColor="@color/CinzaClaro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.716"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/som"
+        app:layout_constraintVertical_bias="0.142" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

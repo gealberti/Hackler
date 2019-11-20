@@ -47,7 +47,8 @@
                 android:background="@null"
                 android:padding="12dp"
                 android:scaleType="fitCenter"
-                android:src="@drawable/bolinhamissao" />
+                android:src="@drawable/bolinhamissao"
+                />
 
             <ImageView
                 android:id="@+id/pistaVazia2"
@@ -203,7 +204,8 @@
                         android:layout_height="match_parent"
                         android:background="@null"
                         android:scaleType="fitCenter"
-                        app:srcCompat="@drawable/blocos_missao" />
+                        app:srcCompat="@drawable/blocos_missao"
+                        android:onClick="irFirewall"/>
 
                     <TextView
                         android:id="@+id/m3"

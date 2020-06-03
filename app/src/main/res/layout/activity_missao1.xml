@@ -19,23 +19,13 @@
             android:layout_height="match_parent">
 
             <ImageView
-                android:id="@+id/iconBarraLateral"
-                android:layout_width="67dp"
-                android:layout_height="76dp"
-                android:layout_gravity="left"
-                android:background="@null"
-                android:onClick="barraLateral"
-                android:padding="12dp"
-                android:scaleType="fitCenter"
-                android:src="@drawable/iconbarralateral" />
-
-            <ImageView
                 android:id="@+id/pistaVazia"
                 android:layout_width="82dp"
                 android:layout_height="90dp"
                 android:layout_gravity="center"
                 android:background="@null"
                 android:padding="12dp"
+                android:layout_marginLeft="10dp"
                 android:scaleType="fitCenter"
                 android:src="@drawable/bolinhamissao" />
 
@@ -46,6 +36,7 @@
                 android:layout_gravity="center"
                 android:background="@null"
                 android:padding="12dp"
+                android:layout_marginLeft="10dp"
                 android:scaleType="fitCenter"
                 android:src="@drawable/bolinhamissao"
                 />
@@ -57,19 +48,23 @@
                 android:layout_gravity="center"
                 android:background="@null"
                 android:padding="12dp"
+                android:layout_marginLeft="10dp"
                 android:scaleType="fitCenter"
                 android:src="@drawable/bolinhamissao" />
 
-            <ImageView
+            <TextView
                 android:id="@+id/tempo"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_width="130dp"
+                android:layout_height="67dp"
                 android:layout_gravity="center"
                 android:background="@null"
                 android:padding="12dp"
                 android:scaleType="fitCenter"
-                android:src="@drawable/timespace" />
-    </LinearLayout>
+                android:text="00:00"
+                android:textAlignment="center"
+                android:textColor="@color/Red"
+                android:textSize="40dp" />
+        </LinearLayout>
 
 
 
@@ -164,7 +159,9 @@
                         android:layout_height="match_parent"
                         android:background="@null"
                         android:scaleType="fitCenter"
-                        app:srcCompat="@drawable/blocos_missao" />
+                        app:srcCompat="@drawable/blocos_missao"
+                        android:onClick="onSenha"
+                        />
                     <TextView
                         android:id="@+id/m2"
                         android:layout_width="match_parent"
@@ -196,7 +193,8 @@
                     android:layout_height="150dp"
                     android:layout_gravity="center_horizontal|center_vertical"
                     android:layout_margin="0dp"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    >
 
                     <ImageView
                         android:id="@+id/missao3"
@@ -205,7 +203,8 @@
                         android:background="@null"
                         android:scaleType="fitCenter"
                         app:srcCompat="@drawable/blocos_missao"
-                        android:onClick="irFirewall"/>
+                        android:onClick="onArquivos"
+                        />
 
                     <TextView
                         android:id="@+id/m3"
@@ -213,7 +212,7 @@
                         android:layout_height="match_parent"
                         android:layout_marginLeft="15dp"
                         android:fontFamily="@font/cairobold"
-                        android:text="@string/pastasdisp"
+                        android:text="@string/arquivosdisp"
                         android:textAlignment="textStart"
                         android:textColor="@color/Background"
                         android:textSize="30dp" />
@@ -233,14 +232,17 @@
                 android:layout_marginBottom="0dp"
                 app:cardBackgroundColor="@color/Background"
                 app:cardCornerRadius="8dp"
-                app:cardElevation="8dp">
+                app:cardElevation="8dp"
+                >
 
                 <FrameLayout
                     android:layout_width="wrap_content"
                     android:layout_height="150dp"
                     android:layout_gravity="center_horizontal|center_vertical"
                     android:layout_margin="0dp"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+
+                    >
 
                     <ImageView
                         android:id="@+id/missao4"
@@ -248,7 +250,9 @@
                         android:layout_height="match_parent"
                         android:background="@null"
                         android:scaleType="fitCenter"
-                        app:srcCompat="@drawable/blocos_missao" />
+                        app:srcCompat="@drawable/blocos_missao"
+                        android:onClick="irFirewall"
+                        />
 
                     <TextView
                         android:id="@+id/m4"

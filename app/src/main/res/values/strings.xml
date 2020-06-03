@@ -13,7 +13,7 @@
     <string name="loginlink">Login</string>
     <string name="localização">Localização</string>
     <string name="senha">Senhas</string>
-    <string name="pastasdisp">Pastas</string>
+    <string name="arquivosdisp">Arquivos</string>
     <string name="adm">Administrador</string>
     <string-array name="conquistas">
         <item>Iniciante</item>

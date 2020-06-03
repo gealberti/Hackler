@@ -8,31 +8,14 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.Toast;
 
-public class ListaMissoesActivity extends AppCompatActivity {
+public class MissaoBoolean extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lista_missoes);
+        setContentView(R.layout.activity_missao_boolean);
         enabledFullScreenMode();
-
     }
-
-    public void voltarHome (View view){
-        Intent voltarIntent = new Intent(ListaMissoesActivity.this, MainActivity.class);
-        startActivity(voltarIntent);
-        finish();
-    }
-    public void toastMissao (View view){
-        Toast.makeText(getApplicationContext() , "Essa missão ainda não está disponível!", Toast.LENGTH_SHORT).show();
-    }
-
-    public void irMissao (View view){
-        Intent irintent = new Intent(ListaMissoesActivity.this, Missao1Activity.class);
-        startActivity(irintent);
-        finish();
-    }
-
 
 
     private void enabledFullScreenMode() {

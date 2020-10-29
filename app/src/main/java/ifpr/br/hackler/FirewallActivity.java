@@ -37,7 +37,7 @@ public class FirewallActivity extends AppCompatActivity {
             }
 
             public void onFinish() {
-                Intent Intent = new Intent(FirewallActivity.this, ListaMissoesActivity.class);
+                Intent Intent = new Intent(FirewallActivity.this, MissaoFalhou.class);
                 contador=0;
                 startActivity(Intent);
                 finish();

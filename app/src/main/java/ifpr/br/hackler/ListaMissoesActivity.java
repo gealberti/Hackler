@@ -28,7 +28,7 @@ public class ListaMissoesActivity extends AppCompatActivity {
     }
 
     public void irMissao (View view){
-        Intent irintent = new Intent(ListaMissoesActivity.this, Missao1Activity.class);
+        Intent irintent = new Intent(ListaMissoesActivity.this, InfoMissao.class);
         startActivity(irintent);
         finish();
     }

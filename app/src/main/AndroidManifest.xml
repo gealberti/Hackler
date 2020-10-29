@@ -12,9 +12,18 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".MissaoBoolean"
-            android:theme="@style/Theme.AppCompat.NoActionBar"
-            ></activity>
+        <activity
+            android:name=".InfoMissao"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".MissaoFalhou"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".MissaoConcluida"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".MissaoBoolean"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
             android:name=".FirewallActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar" />

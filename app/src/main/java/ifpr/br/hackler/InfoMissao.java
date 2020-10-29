@@ -7,16 +7,16 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
 
-public class MissaoConcluida extends AppCompatActivity {
+public class InfoMissao extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_missao_concluida);
+        setContentView(R.layout.activity_info_missao);
         enabledFullScreenMode();
     }
     public void onClick(View view){
-        Intent concluiu = new Intent(MissaoConcluida.this, MainActivity.class);
+        Intent concluiu = new Intent(InfoMissao.this, Missao1Activity.class);
         startActivity(concluiu);
         finish();
     }

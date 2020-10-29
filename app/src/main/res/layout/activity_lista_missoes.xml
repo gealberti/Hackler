@@ -166,10 +166,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_marginTop="15dp"
+                        android:onClick="toastMissao"
                         android:text="3"
                         android:textAlignment="center"
-                        android:onClick="toastMissao"
-                        android:textColor="@color/Background"
+                        android:textColor="@color/colorPrimary"
                         android:textSize="30dp" />
                 </FrameLayout>
             </androidx.cardview.widget.CardView>
@@ -208,10 +208,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_marginTop="15dp"
+                        android:onClick="toastMissao"
                         android:text="4"
                         android:textAlignment="center"
-                        android:onClick="toastMissao"
-                        android:textColor="@color/Background"
+                        android:textColor="@color/colorPrimary"
                         android:textSize="30dp" />
 
                 </FrameLayout>

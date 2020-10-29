@@ -116,6 +116,7 @@
                         android:layout_width="360dp"
                         android:layout_height="match_parent"
                         android:background="@null"
+                        android:onClick="onLocal"
                         android:scaleType="fitCenter"
                         app:srcCompat="@drawable/blocos_missao" />
                     <TextView
@@ -127,7 +128,7 @@
                         android:fontFamily="@font/cairobold"
                         android:text="@string/localização"
                         android:textAlignment="textStart"
-                        android:textColor="@color/Background"
+                        android:textColor="#000000"
                         android:textSize="30dp" />
 
 
@@ -170,7 +171,7 @@
                         android:fontFamily="@font/cairobold"
                         android:text="@string/senha"
                         android:textAlignment="textStart"
-                        android:textColor="@color/Background"
+                        android:textColor="#000000"
                         android:textSize="30dp" />
 
                 </FrameLayout>
@@ -214,7 +215,7 @@
                         android:fontFamily="@font/cairobold"
                         android:text="@string/arquivosdisp"
                         android:textAlignment="textStart"
-                        android:textColor="@color/Background"
+                        android:textColor="#000000"
                         android:textSize="30dp" />
 
 
@@ -249,21 +250,21 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:background="@null"
+                        android:onClick="onAdministrador"
                         android:scaleType="fitCenter"
-                        app:srcCompat="@drawable/blocos_missao"
-                        android:onClick="irFirewall"
-                        />
+                        app:srcCompat="@drawable/blocos_missao" />
 
                     <TextView
                         android:id="@+id/m4"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
                         android:fontFamily="@font/cairobold"
                         android:text="@string/adm"
                         android:textAlignment="textStart"
-                        android:textColor="@color/Background"
-                        android:textSize="30dp" />
+                        android:textColor="#000000"
+                        android:textSize="28sp" />
                 </FrameLayout>
 
             </androidx.cardview.widget.CardView>

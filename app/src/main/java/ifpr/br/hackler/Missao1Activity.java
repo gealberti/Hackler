@@ -18,8 +18,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.concurrent.TimeUnit;
-
-//lista de nomes cpfs e salários
 public class Missao1Activity extends AppCompatActivity {
 
     protected static int contadorLocal = 0;
@@ -33,12 +31,10 @@ public class Missao1Activity extends AppCompatActivity {
         enabledFullScreenMode();
         final TextView tempo = (TextView) findViewById(R.id.tempo);
         new CountDownTimer(300000, 1000) {
-
             @RequiresApi(api = Build.VERSION_CODES.N)
             public void onTick(long millisUntilFinished) {
-                long millis = millisUntilFinished;  // obtained from StopWatch
-                long minutes = (millis / 1000)  / 60;
-                int seconds = (int)((millis / 1000) % 60);
+                long minutes = (millisUntilFinished / 1000)  / 60;
+                int seconds = (int)((millisUntilFinished / 1000) % 60);
 
                 tempo.setText("" + minutes + ":" + seconds);
             }
@@ -46,15 +42,15 @@ public class Missao1Activity extends AppCompatActivity {
             public void onFinish() {
                 Intent Intent = new Intent(Missao1Activity.this, MissaoBoolean.class);
                 startActivity(Intent);
+                contadorLocal = 0;
+                contadorSenha = 0;
+                contadorArquivos = 0;
+                contadorAdmnistrador = 0;
 
             }
         }.start();
     }
 
-
-    public void barraLateral (View view){
-        Toast.makeText(getApplicationContext() , "Menu!", Toast.LENGTH_SHORT).show();
-    }
     public void irFirewall (View view){
         Intent intent = new Intent(Missao1Activity.this, FirewallActivity.class);
         startActivity(intent);
@@ -81,7 +77,6 @@ public class Missao1Activity extends AppCompatActivity {
             contadorLocal = 0;
         }
     }
-
     private void enabledFullScreenMode() {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
@@ -90,6 +85,5 @@ public class Missao1Activity extends AppCompatActivity {
         int uiOptions = View.SYSTEM_UI_FLAG_FULLSCREEN;
         decorView.setSystemUiVisibility(uiOptions);
     }
-
     }
 

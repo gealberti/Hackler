@@ -1,50 +1,59 @@
 package ifpr.br.hackler;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.os.Handler;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class FirewallActivity extends AppCompatActivity {
 
     protected static int contador = 0;
-    private static int  SPLASH_TIME_OUT = 3000;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_firewall);
         enabledFullScreenMode();
 
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                Intent homeIntent = new Intent(FirewallActivity.this, ListaMissoesActivity.class);
-                startActivity(homeIntent);
+        final TextView tempo = (TextView) findViewById(R.id.tempo);
+        final CountDownTimer Timer = new CountDownTimer(10000, 1000) {
+            @RequiresApi(api = Build.VERSION_CODES.N)
+            public void onTick(long millisUntilFinished) {
+                long minutes = (millisUntilFinished / 1000)  / 60;
+                int seconds = (int)((millisUntilFinished / 1000) % 60);
+
+                tempo.setText(seconds + "s");
+            }
+
+            public void onFinish() {
+                Intent Intent = new Intent(FirewallActivity.this, ListaMissoesActivity.class);
+                contador=0;
+                startActivity(Intent);
                 finish();
             }
-        }, SPLASH_TIME_OUT);
+        }.start();
 
         final Button destruir = findViewById(R.id.destruir) ;
-        destruir.setOnClickListener(new View.OnClickListener() {
+        destruir.setOnClickListener(new View.OnClickListener(){
 
             public void onClick(View v) {
                 contador++;
                 if(contador == 10) {
-                    Intent intent = new Intent(FirewallActivity.this, Missao1Activity.class);
+                    Timer.cancel();
                     contador=0;
-                    startActivity(intent);
-                    finish();
-                }
-
-            }
+                    finish();}
+                                        }
         });
     }
 
@@ -57,3 +66,4 @@ public class FirewallActivity extends AppCompatActivity {
         decorView.setSystemUiVisibility(uiOptions);
     }
 }
+    /**/

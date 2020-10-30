@@ -66,6 +66,7 @@ public class Missao1Activity extends AppCompatActivity {
     public void onAdministrador (View view){
         contadorAdmnistrador++;
         if(contadorAdmnistrador == 10){
+            contadorAdmnistrador = 0;
             irFirewall();
         }
     }
